@@ -1,0 +1,434 @@
+@media (max-width: 1300px) {
+    .wrapper {
+        margin: 0 auto;
+        max-width: 375px;
+    }
+
+    .header {
+        max-width: 375px;
+        height: 57px;
+    }
+
+    .header-logo {
+        margin-left: 18px;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .header-phone a {
+        text-decoration-line: none;
+        color: white;
+    }
+
+    .main-home {
+        max-width: 375px;
+        max-height: 476px;
+        background-image: url(../img/main-home.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main-home-text {
+        padding: 85px 0 16px 18px;
+        height: 476px;
+    }
+
+    .main-home-text-title {
+        max-width: 339px;
+        font-size: 23px;
+        line-height: 23px;
+    }
+
+    .main-home-text-subtitle {
+        margin: 16px 18px 20px 0;
+        max-width: 339px;
+        height: 94px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .main-home-text-button {
+        margin: 26px 18px 0 0;
+        width: 339px;
+    }
+
+    .main-projects-completed {
+        max-width: 375px;
+        padding-bottom: 850px;
+    }
+
+    .main-projects-completed-img {
+        display: none;
+    }
+
+    .main-projects-completed-left {
+        padding-top: 36px;
+    }
+
+    .main-projects-completed-left-title h2 {
+        margin: 0 0 34px 0;
+        font-family: Yeseva One, cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.07em;
+        text-transform: uppercase; 
+        color: #E3B873;
+        text-align: center;
+    }
+
+    .main-projects-completed-left-title p {
+        margin: 0 auto;
+        width: 311px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 17px;
+    }
+
+    .main-projects-completed-left-img {
+        margin: 70px auto 0;
+        display: block;
+        width: 340px;
+        height: 241px;
+    }
+    
+    .main-projects-completed-left-info  {
+        margin-top: 37px;
+        width: 375px;
+        justify-content: space-around;
+    }
+
+    .info-card {
+        width: 160px;
+    }
+
+    .main-projects-completed-left-info h3 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .main-projects-completed-left-info p {
+        font-size: 11px;
+        line-height: 18px;
+    }
+  
+    .main-projects-completed-left-nav {
+        display: none;
+    }
+
+    .main-projects-completed-right {
+        display: none;
+    }
+
+    .main-projects-control {
+        position: relative;
+    }
+
+    .main-projects-control-logo {
+        margin-top: -825px;
+    }
+
+    .main-projects-control-img {
+        width: 340px;
+        height: 207px;
+    }
+
+    .main-projects-control-text {
+        width: 340px;
+    }
+
+    .main-projects-control-text p {
+        font-size: 11px;
+        line-height: 19px;
+        color: #FFFFFF
+    }
+        
+    .main-projects-control-arrow img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .main-projects-control-border {
+        margin-top: 28px;
+    }
+
+    .main-projects-control-input {
+        width: 340px;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .main-projects-control-input_1 {
+        margin-top: 62px;
+    }
+
+    .main-projects-control-input_1 label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .main-projects-control-input_1 input {
+        padding: 0;
+        width: 340px;
+        border: none;
+        border-bottom: 1px solid white;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        background-color: #131313;
+        color: #FFFFFF;
+        outline: none;
+    }
+
+    .main-projects-control-input_1 input[type="text"]::placeholder { 
+        font-style: normal;
+        font-weight: normal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF; 
+    }
+
+    .main-projects-control-agreement {
+        margin-top: -145px;
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF;
+    }
+
+    .main-projects-control-input-button {
+        margin-top: 118px;
+        width: 340px;
+
+    }
+
+    .main-questions-wrapper{
+        width: 375px;
+    }
+
+    .main-measurement {
+        display: none;
+    }
+
+    .main-projects-repair {
+        height: 2000px;
+    }
+
+    .main-projects-repair h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .main-projects-repair-types {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-projects-repair-types-card {
+        width: 340px;
+    }
+
+    .main-projects-repair-types-card-img {
+        width: 340px;
+        margin-bottom: -220px;
+    }
+
+    .main-projects-repair-types-card-img img {
+        width: 340px;
+        height: 365px;
+    }
+
+    .main-projects-repair-types-card-text {
+        margin: 12px 0 0;
+        width: 270px;
+        height: 241px;
+    }
+
+    .main-projects-repair-types-card-text h4 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .main-projects-repair-types-card-text ul {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .main-projects-repair-types-card-button {
+        margin-left: 0px;
+        margin-bottom: 59px;
+        width: 190px;
+        height: 40px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .main-projects-control-input_2 {
+    margin-right: 0;
+    }
+
+    .main-styles {
+        margin: 0 auto;
+        width: 375px;
+    }
+
+    .main-styles-background {
+        width: 375px;
+        height: 140px;
+        background: black;
+    }
+
+    .main-styles-content {
+       flex-direction: column;
+       height: 0;
+    }
+
+    .main-styles-content-text h2 {
+        margin: -207px auto 30px;
+        padding: 0;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E3B873;
+    }
+
+    .main-styles-content-text ul {
+        display: none;
+    }
+
+    .main-styles-content-img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .main-styles-content-images {
+        display: none;
+    }
+
+    .main-questions {
+        margin-top: 0;
+    }
+
+    .main-questions-wrapper {
+        width: 375px;
+    }
+
+    .main-questions-input {
+        margin-left: auto;
+        margin: 0 auto;
+        width: 375px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .questions-input input {
+        width: 340px;
+        border-bottom: 1px solid white;
+    }
+
+    .questions-input2 input {
+        width: 340px;
+        border-bottom: 1px solid white;
+    }
+
+    .main-reviews {
+        display: none;
+    }
+
+    .main-questions-input {
+        margin-left: -27px;
+    }
+
+    .questions-agreement {
+        margin: 23px 0 0 18px;
+        text-align: left;
+    }
+
+    .main-questions-button {
+        margin: 67px 0 0 18px;
+        width: 340px;
+    }
+
+    .main-contacts {
+        width: 375px;
+        background-image: none; 
+    }
+
+    .main-contacts-background {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 375px;
+        height: 675px;
+        background: black;
+    }
+
+    .main-contacts-background div:nth-child(2) {
+        order: -1;
+    }
+
+    .main-contacts-title h3 {
+        padding-top: 0px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .main-contacts-image {
+        margin-top: 325px;
+        width: 340px;
+    }
+
+    .main-contacts-image img {
+        width: 340px;
+        
+    }
+
+    .br-none {
+        display: none;
+    }
+
+
+
+
+
+
+    .footer {
+        display: none;
+    }
+
+
+
+
+
+
+}
+
+@media (max-width: 768px) {
+}
+
+
+/* utilities */
+.none {
+    display: none;
+}
+
