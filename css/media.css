@@ -5,7 +5,6 @@
     }
 
     .header {
-        max-width: 375px;
         height: 57px;
     }
 
@@ -27,14 +26,16 @@
     }
 
     .main-home {
-        max-width: 375px;
         max-height: 476px;
         background-image: url(../img/main-home.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .main-home-text {
+    .main-home-text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 85px 0 16px 18px;
         height: 476px;
     }
@@ -59,7 +60,6 @@
     }
 
     .main-projects-completed {
-        max-width: 375px;
         padding-bottom: 850px;
     }
 
@@ -72,7 +72,7 @@
     }
 
     .main-projects-completed-left-title h2 {
-        margin: 0 0 34px 0;
+        margin: 63px 0 34px 0;
         font-family: Yeseva One, cursive;
         font-style: normal;
         font-weight: normal;
@@ -131,8 +131,10 @@
         position: relative;
     }
 
-    .main-projects-control-logo {
-        margin-top: -825px;
+    .main-projects-control-wrapper h3 {
+        margin-top: -835px;
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .main-projects-control-img {
@@ -212,13 +214,9 @@
     }
 
     .main-projects-control-input-button {
-        margin-top: 118px;
+        margin-top: 115px;
         width: 340px;
 
-    }
-
-    .main-questions-wrapper{
-        width: 375px;
     }
 
     .main-measurement {
@@ -269,9 +267,11 @@
         line-height: 22px;
     }
 
-    .main-projects-repair-types-card-button {
+    .main-projects-repair-types-card-non-button {
+        margin-top: -18px;
         margin-left: 0px;
         margin-bottom: 59px;
+        padding: 10px;
         width: 190px;
         height: 40px;
         font-size: 15px;
@@ -279,18 +279,21 @@
     }
 
     .main-projects-control-input_2 {
-    margin-right: 0;
+    margin-left: 0;
     }
 
     .main-styles {
         margin: 0 auto;
-        width: 375px;
     }
 
     .main-styles-background {
-        width: 375px;
-        height: 140px;
-        background: black;
+        height: unset;
+        background: none;
+    }
+
+    .main-style-content-img {
+        display: block;
+        z-index: 1;
     }
 
     .main-styles-content {
@@ -299,7 +302,7 @@
     }
 
     .main-styles-content-text h2 {
-        margin: -207px auto 30px;
+        margin: -140px auto 30px;
         padding: 0;
         font-family: Yeseva One;
         font-style: normal;
@@ -329,10 +332,17 @@
     }
 
     .main-questions-wrapper {
-        width: 375px;
+        margin-top: -20px;
+        padding-top: 100px;
+        height: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: unset;
     }
 
     .main-questions-input {
+        align-items: center;
         margin-left: auto;
         margin: 0 auto;
         width: 375px;
@@ -354,23 +364,17 @@
         display: none;
     }
 
-    .main-questions-input {
-        margin-left: -27px;
-    }
-
     .questions-agreement {
-        margin: 23px 0 0 18px;
-        text-align: left;
+        margin: 23px 0 0 -56px;
     }
 
     .main-questions-button {
-        margin: 67px 0 0 18px;
+        margin: 67px 0 0 0;
         width: 340px;
     }
 
     .main-contacts {
-        width: 375px;
-        background-image: none; 
+       background-image: none; 
     }
 
     .main-contacts-background {
@@ -378,9 +382,8 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        width: 375px;
-        height: 675px;
-        background: black;
+        height: 580px;
+        background: #131313;
     }
 
     .main-contacts-background div:nth-child(2) {
@@ -394,7 +397,7 @@
     }
 
     .main-contacts-image {
-        margin-top: 325px;
+        margin-top: 270px;
         width: 340px;
     }
 
@@ -407,18 +410,9 @@
         display: none;
     }
 
-
-
-
-
-
     .footer {
         display: none;
     }
-
-
-
-
 
 
 }

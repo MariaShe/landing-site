@@ -16,9 +16,9 @@ body {
 .header {
     margin: 0 auto;
     display: flex;
-    max-width: 1440px;
     height: 83px;
     align-items: center;
+    justify-content: center;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -89,7 +89,7 @@ body {
     margin-left: 45px;
 }
 
-.header-button a {
+.header-button {
     font-style: italic;
     font-weight: normal;
     font-size: 11px;
@@ -102,7 +102,6 @@ body {
 }
 .main-home {
     margin: 0 auto;
-    max-width: 1440px;
     height: calc(100vh - 83px);
     max-height: 707px;
     background-image: url(../img/main-home.jpg);
@@ -112,9 +111,14 @@ body {
 }
 
 .main-home-text {
-    max-height: calc(100vh - 83px);
-    padding: 194px 0 208px 134px;
+    height: calc(100vh - 83px);
     background-color: rgba(0, 0, 0, .7);
+}
+
+.main-home-text-content {
+    padding-top: 194px;
+    margin: 0 auto;
+    max-width: 1250px;
 }
 
 .main-home-text-title {
@@ -163,7 +167,6 @@ body {
 
 .main-projects-completed {
     margin: 0 auto;
-    max-width: 1440px;
     background-color: #131313;
     padding-bottom: 416px;
 
@@ -234,7 +237,26 @@ body {
 }
 
 .main-projects-completed-left-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 47px;
+    width: 210px;
+}
+
+.circle-white {
+
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+}
+
+.circle-grey {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .main-projects-completed-right-nav-list {
@@ -280,8 +302,21 @@ body {
     align-items: center;
 }
 
+.main-projects-control-wrapper h3 {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 .main-projects-control-logo {
     margin-bottom: 31px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-projects-control-img {
@@ -491,24 +526,23 @@ body {
 
 }
 
-.main-projects-repair-types-card-button {
+.main-projects-repair-types-card-non-button {
     position: relative;
-    margin-top: -35px;
+    margin-top: -25px;
     margin-left: 30px;
+    padding-top: 15px;
     width: 228px;
     height: 54px;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
+    text-align: center;
     color: #FFFFFF;
-}
-
-.main-projects-repair-types-card-button:hover {
-    color: black;
-    border: 1px solid black;
 }
 
 .main-measurement-wrapper {
@@ -675,14 +709,20 @@ body {
 .main-styles-background {
     margin: 0 auto;
     background-image: url(../img/styles/styles-bg.jpg);
-    max-width: 1440px;
     height: 864px;
 }
 
 .main-styles-content {
     display: flex;
+    justify-content: center;
     background: linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
     height: 864px;
+}
+
+.main-styles-content-wrapper {
+    display: flex;
+    max-width: 1440px;
+    justify-content: center;
 }
 
 .main-styles-content-text {
@@ -729,7 +769,8 @@ body {
     border-bottom: 1px solid  #E3B873;
 }
 
-.main-styles-content-img {
+
+.main-style-content-img {
     display: none;
 }
 
@@ -929,12 +970,11 @@ body {
 
 .main-contacts {
     margin: 0 auto;
-    max-width: 1440px;
     background-image: url(../img/contacts/contacts-bg.jpg);
+    background-size: cover;
 }
 
 .main-contacts-background {
-    max-width: 1440px;
     height: 954px;
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
 }

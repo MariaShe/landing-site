@@ -33,21 +33,21 @@
         <div class="header-phone">
             <a href="tel:+79287683239">+7 (928) 768-32-39</a>
         </div>
-        <button class="button header-button">
-            <a href="#">request a call</a>
-        </button>
+        <button class="button header-button">request a call</button>
     </header>
     <main class="main">
         <section class="main-home">
-            <div class="main-home-text">
-                <h1 class="main-home-text-title">Turnkey Repair in the 
-                    city of <span class="main-home-text-title-city">Rostov-on-Don</span></h1>
-                <p class="main-home-text-subtitle">Get ready-made turnkey repairs on time<br>
-                    with work time saving up to 45 days and 20% from<br>
-                    cost of materials due to the organization of work</p>
-                <button class="button main-home-text-button">CALCULATE THE COST</button>
-                <button class="button main-home-text-button">SUBMIT YOUR APPLICATION</button>
-            </div>
+                <div class="main-home-text">
+                    <div class="main-home-text-content">
+                        <h1 class="main-home-text-title">Turnkey Repair in the 
+                            city of <span class="main-home-text-title-city">Rostov-on-Don</span></h1>
+                        <p class="main-home-text-subtitle">Get ready-made turnkey repairs on time<br>
+                            with work time saving up to 45 days and 20% from<br>
+                            cost of materials due to the organization of work</p>
+                        <button class="button main-home-text-button">CALCULATE THE COST</button>
+                        <button class="button main-home-text-button">SUBMIT YOUR APPLICATION</button>
+                    </div>
+                </div>
         </section>
         <section class="main-projects">
             <div class="main-projects-completed">
@@ -79,7 +79,11 @@
                             </div>
                         </div>
                         <div class="main-projects-completed-left-nav">
-                            <img src="./img/projects/projects-complited/nav.svg" alt="navigation">
+                            <img src="./img/projects/projects-complited/left-arrow.svg" alt="left-arrow">
+                            <div class="circle-white"></div>
+                            <div class="circle-grey"></div>
+                            <div class="circle-grey"></div>
+                            <img src="./img/projects/projects-complited/right-arrow.svg" alt="right-aroow">
                         </div>
                     </div>
                     
@@ -105,7 +109,12 @@
             </div>
             <div class="main-projects-control">
                 <div class="main-projects-control-wrapper wrapper">
-                    <img class="main-projects-control-logo" src="./img/projects/projects-complited/control-icon.svg" alt="camera">
+                    <h3>Online control</h3>
+                    <div class="main-projects-control-logo">
+                        <img src="./img/projects/projects-complited/control-icon-line1.svg" alt="control-icon-line1">
+                        <img src="./img/projects/projects-complited/control-icon-camera.svg" alt="control-icon-camera">
+                        <img src="./img/projects/projects-complited/control-icon-line2.svg" alt="control-icon-line2">
+                    </div>
                     <div class="main-projects-control-img">
                         <div class="main-projects-control-arrow">
                             <img src="./img/projects/projects-complited/control-arrow.svg" alt="arrow">
@@ -152,7 +161,7 @@
                                 <li>Replacing doors</li>
                             </ul>
                         </div>
-                        <button class="main-projects-repair-types-card-button button">from 900 rub / m2</button>
+                        <div class="main-projects-repair-types-card-non-button">from 900 rub / m2</div>
                     </div>
                     <div class="main-projects-repair-types-card">
                         <div class="main-projects-repair-types-card-img">
@@ -170,7 +179,7 @@
                                 <li>Replacing doors</li>
                             </ul>
                         </div>
-                        <button class="main-projects-repair-types-card-button button">from 1800 rub / m2</button>
+                        <div class="main-projects-repair-types-card-non-button">from 900 rub / m2</div>
                     </div>
                     <div class="main-projects-repair-types-card">
                         <div class="main-projects-repair-types-card-img">
@@ -188,7 +197,7 @@
                                 <li>Replacing doors</li>
                             </ul>
                         </div>
-                        <button class="main-projects-repair-types-card-button button">from 4000 rub / m2</button>
+                        <div class="main-projects-repair-types-card-non-button">from 900 rub / m2</div>
                     </div>
                 </div>
             </div>
@@ -246,57 +255,61 @@
         <section class="main-styles">
             <div class="main-styles-background">
                 <div class="main-styles-content">
-                    <div class="main-styles-content-text">
-                        <h2>We realize your<br>wildest fantasies</h2>
-                        <ul class="main-styles-content-text-list">
-                            <li>
-                                <a href="#">American classic</a>
-                            </li>
-                            <li>
-                                <a href="#">Empire</a>
-                            </li>
-                            <li>
-                                <a href="#">Classical</a>
-                            </li>
-                            <li>
-                                <a href="#">Loft</a>
-                            </li>
-                            <li>
-                                <a href="#">Minimalism</a>
-                            </li>
-                            <li>
-                                <a href="#">Provence</a>
-                            </li>
-                            <li>
-                                <a href="#">Romanticism</a>
-                            </li>
-                            <li>
-                                <a href="#">Scandinavian style</a>
-                            </li>
-                            <li>
-                                <a href="#">Mediterranean style</a>
-                            </li>
-                            <li>
-                                <a href="#">High tech</a>
-                            </li>
-                            <li>
-                                <a href="#">Eclecticism</a>
-                            </li>
-                        </ul>
-                        <img class="main-styles-content-img" src="./img/styles/styles-media.jpg" alt="clock-media">
-                    </div>
-                    <div class="main-styles-content-images">
-                        <div class="main-styles-content-images-clock styles-card">
-                            <img src="./img/styles/clock.jpg" alt="clock">
+                    <div class="main-styles-content-wrapper">
+                        <div class="main-styles-content-text">
+                            <h2>We realize your<br>wildest fantasies</h2>
+                            <ul class="main-styles-content-text-list">
+                                <li>
+                                    <a href="#">American classic</a>
+                                </li>
+                                <li>
+                                    <a href="#">Empire</a>
+                                </li>
+                                <li>
+                                    <a href="#">Classical</a>
+                                </li>
+                                <li>
+                                    <a href="#">Loft</a>
+                                </li>
+                                <li>
+                                    <a href="#">Minimalism</a>
+                                </li>
+                                <li>
+                                    <a href="#">Provence</a>
+                                </li>
+                                <li>
+                                    <a href="#">Romanticism</a>
+                                </li>
+                                <li>
+                                    <a href="#">Scandinavian style</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mediterranean style</a>
+                                </li>
+                                <li>
+                                    <a href="#">High tech</a>
+                                </li>
+                                <li>
+                                    <a href="#">Eclecticism</a>
+                                </li>
+                            </ul>
+                            <div class="main-style-content-img">
+                                <img class="main-styles-content-img-img" src="./img/styles/styles-media.jpg" alt="clock-media">
+                            </div>
                         </div>
-                        <div class="main-styles-content-images-bedroom styles-card">
-                            <img src="./img/styles/bedroom.jpg" alt="bedroom">
-                        </div>
-                        <div class="main-styles-content-images-living_room styles-card">
-                            <img src="./img/styles/living_room.jpg" alt="living_room">
-                        </div>
-                        <div class="main-styles-content-images-couch styles-card">
-                            <img src="./img/styles/couch.jpg" alt="couch">
+                        <div class="main-styles-content-images">
+                            <div class="main-styles-content-images-clock styles-card">
+                                <img src="./img/styles/clock.jpg" alt="clock">
+                            </div>
+                            <div class="main-styles-content-images-bedroom styles-card">
+                                <img src="./img/styles/bedroom.jpg" alt="bedroom">
+                            </div>
+                            <div class="main-styles-content-images-living_room styles-card">
+                                <img src="./img/styles/living_room.jpg" alt="living_room">
+                            </div>
+                            <div class="main-styles-content-images-couch styles-card">
+                                <img src="./img/styles/couch.jpg" alt="couch">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -441,9 +454,7 @@
         <div class="header-phone">
             <a href="tel:+79287683239">+7 (928) 768-32-39</a>
         </div>
-        <button class="button header-button">
-            <a href="#">request a call</a>
-        </button>
+        <button class="button header-button">request a call</button>
     </footer>
 </body>
 </html>
