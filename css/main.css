@@ -244,12 +244,10 @@ body {
     width: 210px;
 }
 
-.circle-white {
-
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: white;
+.circles-container-js {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
 }
 
 .circle-grey {
@@ -258,6 +256,14 @@ body {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.3);
 }
+
+.active-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+}
+
 
 .main-projects-completed-right-nav-list {
     margin: 0;
@@ -287,12 +293,16 @@ body {
     border-bottom: 1px solid  #E3B873;
 }
 
-.main-projects-completed-img {
-    margin-top: 53px;
+.active-link {
+    color: #E3B873;
+	text-decoration: underline;
 }
 
-.main-projects-completed-img img {
-    max-width: 100%;
+.slide-js {
+    width: 679px;
+	height: 482px;
+	margin-top: 53px;
+	background-image: url("../img/slider-script/admiral-image.jpg");
 }
 
 .main-projects-control-wrapper {

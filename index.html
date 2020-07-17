@@ -63,15 +63,15 @@
                         <div class="main-projects-completed-left-info">
                             <div class="main-projects-completed-left-info-city info-card">
                                 <h3>City:</h3>
-                                <p>Rostov-on-Don<br>LCD admiral</p>
+                                <p class="city-js">Rostov-on-Don<br>LCD admiral</p>
                             </div>
                             <div class="main-projects-completed-left-info-area info-card">
                                 <h3>apartment area:</h3>
-                                <p>81 m2</p>
+                                <p class="apartment-js">81 m2</p>
                             </div>
                             <div class="main-projects-completed-left-info-time info-card">
                                 <h3>Repair time:</h3>
-                                <p>3.5 months</p>
+                                <p class="time-js">3.5 months</p>
                             </div>
                             <div class="main-projects-completed-left-info-cost info-card">
                                 <h3>Repair Cost:</h3>
@@ -79,11 +79,13 @@
                             </div>
                         </div>
                         <div class="main-projects-completed-left-nav">
-                            <img src="./img/projects/projects-complited/left-arrow.svg" alt="left-arrow">
-                            <div class="circle-white"></div>
-                            <div class="circle-grey"></div>
-                            <div class="circle-grey"></div>
-                            <img src="./img/projects/projects-complited/right-arrow.svg" alt="right-aroow">
+                            <img class="prev" src="./img/projects/projects-complited/left-arrow.svg" alt="left-arrow">
+                            <div class="circles-container-js">
+                                <div class="circle-grey active-dot"></div>
+                                <div class="circle-grey dot"></div>
+                                <div class="circle-grey dot"></div>
+                            </div>
+                            <img class="next" src="./img/projects/projects-complited/right-arrow.svg" alt="right-aroow">
                         </div>
                     </div>
                     
@@ -91,19 +93,17 @@
                         <nav class="main-projects-completed-right-nav">
                             <ul class="main-projects-completed-right-nav-list">
                                 <li>
-                                    <a href="#">Rostov-on-Don, Admiral</a>
+                                    <a class="link-projects-js active-link">Rostov-on-Don, Admiral</a>
                                 </li>
                                 <li>
-                                    <a href="#">Sochi Thieves</a>
+                                    <a class="link-projects-js">Sochi Thieves</a>
                                 </li>
                                 <li>
-                                    <a href="#">Rostov-on-Don Patriotic</a>
+                                    <a class="link-projects-js">Rostov-on-Don Patriotic</a>
                                 </li>
                             </ul>
                         </nav>
-                        <div class="main-projects-completed-img">
-                            <img src="./img/projects/projects-complited/main-project1.jpg" alt="Dva styla y okna">
-                        </div>
+                        <div class="main-projects-completed-img slide-js"></div>
                     </div>
                 </div>
             </div>
@@ -456,5 +456,6 @@
         </div>
         <button class="button header-button">request a call</button>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
