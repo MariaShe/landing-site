@@ -29,7 +29,7 @@ const designes = [
   const img = document.querySelector('.slide-js');
   const circlesContainer = document.querySelector('.circles-container-js');
   const dots = document.querySelectorAll('.dot');
-  const links = document.querySelectorAll(".link-projects-js");
+  const links = document.querySelectorAll('.link-projects-js');
   const prev = document.querySelector('.prev');
   const next = document.querySelector('.next');
   let currentIndex = 0;
@@ -46,7 +46,7 @@ const designes = [
     repairTime.innerHTML = designes[index].repairTime;
     img.style.backgroundImage = `url('${designes[index].img}')`;
     for (let i = 0; i < dots.length; i++) {
-      dots[i].classList.remove('active-dot');;
+      dots[i].classList.remove('active-dot');
       links[i].classList.remove('active-link');
     }
     dots[index].classList.add('active-dot');
