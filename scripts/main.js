@@ -5,19 +5,19 @@ const designes = [
       city: 'Rostov-on-Don<br>LCD admiral',
       apartmentArea: '81 m2',
       repairTime: '3.5 months',
-      img: '../img/slider-script/admiral-image.jpg'
+      img: './img/slider-script/admiral-image.jpg'
     },
     {
       city: 'Sochi<br>Thieves',
       apartmentArea: '105 m2',
       repairTime: '4 months',
-      img: '../img/slider-script/sochi-image.jpg'
+      img: './img/slider-script/sochi-image.jpg'
       },
     {
       city: 'Rostov-on-Don<br>Patriotic',
       apartmentArea: '93 m2',
       repairTime: '3 months',
-      img: '../img/slider-script/patriotic-image.jpg'
+      img: './img/slider-script/patriotic-image.jpg'
       }
   ]
 
@@ -28,24 +28,37 @@ const designes = [
   const repairTime = document.querySelector('.time-js');
   const img = document.querySelector('.slide-js');
   const circlesContainer = document.querySelector('.circles-container-js');
-  const dots = document.querySelector('.dot');
+  const dots = document.querySelectorAll('.dot');
   const links = document.querySelectorAll(".link-projects-js");
   const prev = document.querySelector('.prev');
   const next = document.querySelector('.next');
+  let currentIndex = 0;
+
+  dots.forEach((dot, index) => dot.addEventListener('click', () => { currentSlide(index) }));
+  links.forEach((link, index) => link.addEventListener('click', () => { currentSlide(index) }));
+
 
 //Объявление текущего слайда
-  
+ 
   const setDesign = (index) => {
     city.innerHTML = designes[index].city;
     apartmentArea.innerHTML = designes[index].apartmentArea;
     repairTime.innerHTML = designes[index].repairTime;
     img.style.backgroundImage = `url('${designes[index].img}')`;
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove('active-dot');;
+      links[i].classList.remove('active-link');
+    }
+    dots[index].classList.add('active-dot');
     links[index].classList.add('active-link');
-    // dots[index].classList.add('active-dot');// Здесь возникает ошибка
-  }
-  
+  };
+
+  const currentSlide = (index) => {
+    setDesign(index);
+    currentIndex = index;
+  };
+
   //Функции переключения слайдов по стрелкам
-  let currentIndex = 0
   
   prev.addEventListener('click', () => {
     if (currentIndex === 0) {
@@ -64,3 +77,4 @@ const designes = [
       setDesign(currentIndex + 1);
       currentIndex ++;
   })
+  

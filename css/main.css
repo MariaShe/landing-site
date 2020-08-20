@@ -276,7 +276,7 @@ body {
     padding-left: 60px;
 }
 
-.main-projects-completed-right-nav-list li a {
+.link-projects-js {
     text-decoration: none;
     font-family: Yeseva One;
     font-style: normal;
@@ -294,8 +294,9 @@ body {
 }
 
 .active-link {
+    padding-bottom: 7px;
     color: #E3B873;
-	text-decoration: underline;
+    border-bottom: 1px solid  #E3B873;
 }
 
 .slide-js {
