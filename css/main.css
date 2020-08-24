@@ -255,6 +255,7 @@ body {
     height: 9px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 
 .active-dot {
@@ -264,6 +265,13 @@ body {
     background: white;
 }
 
+.prev {
+    cursor: pointer;
+}
+
+.next {
+    cursor: pointer;
+}
 
 .main-projects-completed-right-nav-list {
     margin: 0;
@@ -291,6 +299,7 @@ body {
     padding-bottom: 7px;
     color: #E3B873;
     border-bottom: 1px solid  #E3B873;
+    cursor: pointer;
 }
 
 .active-link {
